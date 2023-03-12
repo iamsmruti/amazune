@@ -33,7 +33,7 @@ const RightToolbar = () => {
         </Stack>
 
         <Stack>
-            <Box sx={{mr: 3}}>
+            <Box sx={{mr: {md:3, xs: 0}}}>
                 <StyledBadge badgeContent={4} color="primary">
                     <ShoppingCartIcon fontSize="large" sx={{color: 'white'}}/>
                 </StyledBadge>

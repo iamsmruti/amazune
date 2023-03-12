@@ -20,15 +20,15 @@ const Navbar = () => {
 
   return (
     <Box>
-      <AppBar sx={{bgcolor: 'black', display: 'flex', flexDirection: 'row', width: '100%'}}>
-        <Grid container>
-            <Grid item md={3}>
+      <AppBar sx={{bgcolor: 'black', display: 'flex', flexDirection: 'row', width: '100vw'}}>
+        <Grid container sx={{width: '100vw', overflowX: 'hidden'}}>
+            <Grid item md={3} xs={12}>
                 <LeftToolbar />
             </Grid>
-            <Grid item md={5}>
+            <Grid item md={5} xs={12}>
                 <SearchToolbar setQuery={setQuery}/>
             </Grid>
-            <Grid item md={4}>
+            <Grid item md={4} xs={12}>
                 <RightToolbar />
             </Grid>
         </Grid>

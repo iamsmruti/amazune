@@ -208,7 +208,7 @@ const SubNavbar = () => {
           <Typography sx={{ color: 'white', fontSize: '13px' }}>All</Typography>
         </IconButton>
 
-        <Box sx={{ display: 'flex', alignItems: 'center' }}>
+        <Box sx={{ display: {md: 'flex', xs: 'none'}, alignItems: 'center' }}>
           <Link to='/best-sellers'>
             <Typography sx={customStyle}>Best Sellers</Typography>
           </Link>
